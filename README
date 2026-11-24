@@ -1,0 +1,125 @@
+# Mobile App Product Analytics
+
+## Overview
+
+End-to-end product analytics project for a fictional mobile application.
+
+The project analyzes user behavior, conversion funnel, traffic sources, daily active users, retention, and A/B test results.
+
+## Business Questions
+
+- How many users convert through the product funnel?
+- Where is the largest user drop-off?
+- Which acquisition channel has the highest conversion?
+- How does daily activity change over time?
+- How well do users return to the application?
+- Does the new version of the product improve conversion?
+
+## Tech Stack
+
+- Python
+- Pandas
+- NumPy
+- SQL
+- SQLite
+- Matplotlib
+- Seaborn
+
+## Analysis
+
+### Conversion Funnel
+
+The project analyzes the following funnel:
+
+`App Open → Registration → Product View → Add to Cart → Purchase`
+
+### Acquisition Analysis
+
+Users are segmented by acquisition source:
+
+- Google
+- Instagram
+- Facebook
+- TikTok
+- Organic
+
+### Retention
+
+User retention is calculated for:
+
+- Day 1
+- Day 7
+- Day 14
+- Day 30
+
+### A/B Testing
+
+Users are divided into two experimental groups:
+
+- Control
+- Test
+
+Purchase conversion is compared between the two groups.
+
+## Project Structure
+
+```text
+mobile-app-analytics/
+│
+├── data/
+│   ├── users.csv
+│   └── app_events.csv
+│
+├── sql/
+│   └── analysis.sql
+│
+├── visuals/
+│   ├── funnel.png
+│   ├── source_conversion.png
+│   ├── dau.png
+│   ├── retention.png
+│   └── ab_test.png
+│
+├── analysis.py
+├── requirements.txt
+└── README.md
+```
+
+## How to Run
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the analysis:
+
+```bash
+python analysis.py
+```
+
+The script automatically generates the dataset, performs the analysis, creates visualizations, and creates an SQLite database.
+
+## Key Metrics
+
+The project calculates:
+
+- DAU
+- Conversion Rate
+- Funnel Conversion
+- Traffic Source Conversion
+- Retention
+- A/B Test Uplift
+
+## Business Recommendations
+
+The analysis can be used to identify the weakest stage of the user funnel, evaluate acquisition channels, and determine whether a product change improves conversion.
+
+## Data
+
+The dataset is synthetic and was generated specifically for this portfolio project.
+
+## Author
+
+Data Analyst Portfolio Project
